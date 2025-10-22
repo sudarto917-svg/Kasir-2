@@ -743,19 +743,6 @@
                 productGrid.innerHTML = `<p class="col-span-full text-center text-red-400"><b>Gagal memuat menu.</b><br>Pastikan URL Apps Script benar dan sheet 'Produk' sudah ada.</p>`;
             }
         };
-         // ----------------------------------------------------
-        const urlWebApp = "https://script.google.com/macros/s/AKfycby3MxuXU9D5fSHc1jEJEp7B5u03k8pJ_Bwx2kUlodREIIBuKGuFZfxw1b_o2pS_vQs0qw/exec"; // <-- Ganti dengan URL Web App Anda
-
-        // Menggunakan fetch untuk memanggil URL web app Anda
-        fetch(urlWebApp)
-            .then(response => response.text())
-            .then(data => {
-                console.log("Respon notifikasi:", data); // Menampilkan respon dari skrip
-            })
-            .catch(error => {
-            console.error("Gagal mengirim notifikasi:", error); // Menangani jika ada error
-            });
-        // ----------------------------------------------------
 
         // --- ADMIN LOGIC ---
         const openAdminLoginModal = () => {
